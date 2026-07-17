@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#071626" />
+  <title>GemaNusa Lite — Seismograf Mini Smartphone</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-icon">GN</div>
+        <div>
+          <h1>GemaNusa Lite</h1>
+          <p>Dari Getaran ke Keselamatan</p>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <button class="nav-item active" data-target="home">1. Mulai Misi</button>
+        <button class="nav-item" data-target="problem">2. Masalah Nyata</button>
+        <button class="nav-item" data-target="goals">3. Tujuan Belajar</button>
+        <button class="nav-item" data-target="pretest">4. Pre-test & Prediksi</button>
+        <button class="nav-item" data-target="experiment">5. SeismoPhone</button>
+        <button class="nav-item" data-target="analysis">6. Bandingkan Hasil</button>
+        <button class="nav-item" data-target="reflection">7. Refleksi & Post-test</button>
+      </nav>
+
+      <div class="sidebar-card">
+        <strong>Mode lomba 4 hari</strong>
+        <span>Fokus: satu modul, satu demo, satu narasi kuat.</span>
+      </div>
+    </aside>
+
+    <main class="content">
+      <section id="home" class="page active">
+        <div class="hero">
+          <div class="badge">IPDP • Deep Learning • Fisika Bencana</div>
+          <h2>HP siswa menjadi <span>seismograf mini</span>.</h2>
+          <p>
+            GemaNusa Lite membantu siswa belajar getaran, amplitudo, stabilitas struktur,
+            dan kesiapsiagaan bencana melalui eksperimen miniatur bangunan.
+          </p>
+          <div class="cta-row">
+            <button class="primary" data-next="problem">Mulai Misi</button>
+            <button class="secondary" id="installBtn" hidden>Pasang Webapp</button>
+          </div>
+        </div>
+
+        <div class="grid-3">
+          <article class="feature-card">
+            <h3>Sensor Nyata</h3>
+            <p>Membaca accelerometer smartphone untuk melihat getaran secara real-time.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Eksperimen Aktif</h3>
+            <p>Siswa membangun, mengguncang, mengukur, membandingkan, dan memperbaiki desain.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Karakter</h3>
+            <p>Refleksi tentang keselamatan, kepedulian, dan kejujuran terhadap data eksperimen.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="problem" class="page">
+        <div class="page-header">
+          <span class="eyebrow">Masalah Nyata</span>
+          <h2>Mengapa bangunan bergoyang saat terjadi getaran?</h2>
+        </div>
+
+        <div class="story-card">
+          <p>
+            Banyak siswa belajar getaran dan gelombang hanya sebagai rumus. Padahal,
+            konsep getaran berkaitan langsung dengan keselamatan hidup di negara rawan
+            bencana seperti Indonesia.
+          </p>
+          <p>
+            Pada misi ini, kalian akan menguji dua miniatur bangunan: satu tanpa penguat
+            diagonal dan satu dengan penguat diagonal. Smartphone digunakan sebagai
+            seismograf mini untuk membaca getaran.
+          </p>
+        </div>
+
+        <div class="mission-flow">
+          <div><b>1</b><span>Prediksi</span></div>
+          <div><b>2</b><span>Eksperimen</span></div>
+          <div><b>3</b><span>Data</span></div>
+          <div><b>4</b><span>Analisis</span></div>
+          <div><b>5</b><span>Refleksi</span></div>
+        </div>
+
+        <div class="button-row">
+          <button class="secondary" data-next="home">Kembali</button>
+          <button class="primary" data-next="goals">Lanjut</button>
+        </div>
+      </section>
+
+      <section id="goals" class="page">
+        <div class="page-header">
+          <span class="eyebrow">Kode IPDP</span>
+          <h2>Tujuan, Peserta Didik, Materi, Strategi, Evaluasi</h2>
+        </div>
+
+        <div class="ipdp-grid">
+          <article>
+            <h3>Tujuan</h3>
+            <p>Siswa mampu menjelaskan hubungan amplitudo getaran, desain struktur, dan stabilitas bangunan berdasarkan data eksperimen.</p>
+          </article>
+          <article>
+            <h3>Peserta Didik</h3>
+            <p>Siswa SMA/MA, ramah untuk sekolah minim laboratorium, menggunakan alat murah dan smartphone.</p>
+          </article>
+          <article>
+            <h3>Materi</h3>
+            <p>Getaran, amplitudo, frekuensi sederhana, redaman, stabilitas struktur, dan kesiapsiagaan bencana.</p>
+          </article>
+          <article>
+            <h3>Strategi</h3>
+            <p>Problem-Based Learning, Inquiry Learning, Predict-Observe-Explain, dan Design Challenge.</p>
+          </article>
+          <article>
+            <h3>Evaluasi</h3>
+            <p>Pre-test, prediksi, data sensor, analisis, refleksi karakter, dan post-test.</p>
+          </article>
+        </div>
+
+        <div class="deep-card">
+          <h3>Deep Learning</h3>
+          <div class="deep-row">
+            <span><b>Pikir</b> analisis grafik</span>
+            <span><b>Hati</b> peduli keselamatan</span>
+            <span><b>Rasa</b> fisika bermakna</span>
+            <span><b>Raga</b> eksperimen langsung</span>
+          </div>
+        </div>
+
+        <div class="button-row">
+          <button class="secondary" data-next="problem">Kembali</button>
+          <button class="primary" data-next="pretest">Lanjut</button>
+        </div>
+      </section>
+
+      <section id="pretest" class="page">
+        <div class="page-header">
+          <span class="eyebrow">Evaluasi Awal</span>
+          <h2>Pre-test singkat dan prediksi desain</h2>
+        </div>
+
+        <form id="pretestForm" class="form-card">
+          <label>
+            Nama/Kelompok
+            <input id="studentName" type="text" placeholder="Contoh: Kelompok 1 / Andi" />
+          </label>
+
+          <fieldset>
+            <legend>1. Amplitudo adalah...</legend>
+            <label><input type="radio" name="q1" value="0" /> banyaknya getaran per detik</label>
+            <label><input type="radio" name="q1" value="1" /> simpangan/getaran maksimum dari keadaan seimbang</label>
+            <label><input type="radio" name="q1" value="0" /> waktu untuk satu getaran</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>2. Struktur dengan penguat diagonal umumnya...</legend>
+            <label><input type="radio" name="q2" value="1" /> lebih kaku dan lebih stabil terhadap gaya samping</label>
+            <label><input type="radio" name="q2" value="0" /> selalu lebih ringan dan pasti roboh</label>
+            <label><input type="radio" name="q2" value="0" /> tidak berpengaruh sama sekali</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>3. Jika guncangan makin kuat, grafik getaran biasanya menunjukkan...</legend>
+            <label><input type="radio" name="q3" value="1" /> puncak/amplitudo yang lebih besar</label>
+            <label><input type="radio" name="q3" value="0" /> garis selalu datar</label>
+            <label><input type="radio" name="q3" value="0" /> nilai selalu nol</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>4. Data eksperimen yang berbeda dari teori sebaiknya...</legend>
+            <label><input type="radio" name="q4" value="0" /> diubah agar terlihat benar</label>
+            <label><input type="radio" name="q4" value="1" /> dicatat apa adanya dan dianalisis sumber kesalahannya</label>
+            <label><input type="radio" name="q4" value="0" /> dihapus saja</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>5. Menurutmu, model mana yang lebih stabil?</legend>
+            <label><input type="radio" name="predict" value="Model A tanpa penguat diagonal" /> Model A tanpa penguat diagonal</label>
+            <label><input type="radio" name="predict" value="Model B dengan penguat diagonal" /> Model B dengan penguat diagonal</label>
+          </fieldset>
+
+          <label>
+            Alasan prediksi
+            <textarea id="predictionReason" placeholder="Tuliskan alasan singkat..."></textarea>
+          </label>
+
+          <div class="button-row">
+            <button class="secondary" type="button" data-next="goals">Kembali</button>
+            <button class="primary" type="submit">Simpan & Lanjut Eksperimen</button>
+          </div>
+        </form>
+      </section>
+
+      <section id="experiment" class="page">
+        <div class="page-header">
+          <span class="eyebrow">SeismoPhone</span>
+          <h2>Uji getaran dengan accelerometer smartphone</h2>
+        </div>
+
+        <div class="experiment-grid">
+          <div class="sensor-panel">
+            <div class="status-row">
+              <span>Status Sensor</span>
+              <strong id="sensorStatus">Belum aktif</strong>
+            </div>
+
+            <div class="metric-grid">
+              <div><small>ax</small><b id="axVal">0.00</b></div>
+              <div><small>ay</small><b id="ayVal">0.00</b></div>
+              <div><small>az</small><b id="azVal">0.00</b></div>
+              <div><small>Getaran</small><b id="resultantVal">0.00</b></div>
+              <div><small>Maksimum</small><b id="maxVal">0.00</b></div>
+              <div><small>Sampel</small><b id="sampleVal">0</b></div>
+            </div>
+
+            <canvas id="motionCanvas" width="900" height="360" aria-label="Grafik getaran real-time"></canvas>
+
+            <div class="button-row wrap">
+              <button class="primary" id="startSensorBtn">Mulai Sensor</button>
+              <button class="secondary" id="calibrateBtn">Kalibrasi</button>
+              <button class="secondary" id="resetRunBtn">Reset Data</button>
+              <button class="model-a" id="saveABtn">Simpan Model A</button>
+              <button class="model-b" id="saveBBtn">Simpan Model B</button>
+            </div>
+
+            <p class="hint">
+              Catatan: pada beberapa HP, sensor hanya aktif melalui HTTPS/hosting. Jika tidak berjalan,
+              gunakan Chrome Android dan pastikan izin motion sensor aktif.
+            </p>
+          </div>
+
+          <aside class="procedure-card">
+            <h3>Prosedur singkat</h3>
+            <ol>
+              <li>Letakkan HP di papan getar dengan aman.</li>
+              <li>Tekan <b>Mulai Sensor</b>, lalu <b>Kalibrasi</b>.</li>
+              <li>Uji Model A, kemudian klik <b>Simpan Model A</b>.</li>
+              <li>Reset, uji Model B, lalu klik <b>Simpan Model B</b>.</li>
+              <li>Buka halaman Bandingkan Hasil.</li>
+            </ol>
+
+            <h3>Aturan adil</h3>
+            <ul>
+              <li>Ukuran model A dan B dibuat sama.</li>
+              <li>Cara mengguncang dibuat semirip mungkin.</li>
+              <li>Beban di atas model dibuat sama.</li>
+              <li>Data tidak boleh diubah agar terlihat “bagus”.</li>
+            </ul>
+          </aside>
+        </div>
+
+        <div class="button-row">
+          <button class="secondary" data-next="pretest">Kembali</button>
+          <button class="primary" data-next="analysis">Bandingkan Hasil</button>
+        </div>
+      </section>
+
+      <section id="analysis" class="page">
+        <div class="page-header">
+          <span class="eyebrow">Analisis</span>
+          <h2>Bandingkan Model A dan Model B</h2>
+        </div>
+
+        <div class="comparison">
+          <div class="result-card a">
+            <h3>Model A</h3>
+            <p>Tanpa penguat diagonal</p>
+            <b id="modelAMax">Belum ada data</b>
+            <small>Getaran maksimum</small>
+          </div>
+
+          <div class="result-card b">
+            <h3>Model B</h3>
+            <p>Dengan penguat diagonal</p>
+            <b id="modelBMax">Belum ada data</b>
+            <small>Getaran maksimum</small>
+          </div>
+        </div>
+
+        <div id="mentorCard" class="mentor-card">
+          <h3>NusaMentor</h3>
+          <p id="mentorText">Simpan data Model A dan Model B terlebih dahulu agar NusaMentor dapat memberi umpan balik.</p>
+        </div>
+
+        <form id="analysisForm" class="form-card">
+          <label>
+            Model mana yang lebih stabil berdasarkan data?
+            <select id="stableModel">
+              <option value="">Pilih jawaban...</option>
+              <option>Model A lebih stabil</option>
+              <option>Model B lebih stabil</option>
+              <option>Belum dapat disimpulkan</option>
+            </select>
+          </label>
+
+          <label>
+            Jelaskan hubungan getaran maksimum dengan stabilitas bangunan.
+            <textarea id="analysisAnswer" placeholder="Tuliskan analisis singkat..."></textarea>
+          </label>
+
+          <label>
+            Apa kemungkinan sumber kesalahan eksperimen?
+            <textarea id="errorSource" placeholder="Contoh: cara mengguncang tidak sama, posisi HP berubah, model kurang simetris..."></textarea>
+          </label>
+
+          <div class="button-row">
+            <button class="secondary" type="button" data-next="experiment">Kembali</button>
+            <button class="primary" type="submit">Simpan Analisis</button>
+          </div>
+        </form>
+      </section>
+
+      <section id="reflection" class="page">
+        <div class="page-header">
+          <span class="eyebrow">Refleksi & Evaluasi Akhir</span>
+          <h2>Fisika, keselamatan, dan kejujuran data</h2>
+        </div>
+
+        <form id="postForm" class="form-card">
+          <label>
+            Apa makna fisika bagi keselamatan manusia?
+            <textarea id="reflectionSafety" placeholder="Tuliskan refleksi..."></textarea>
+          </label>
+
+          <label>
+            Mengapa data eksperimen harus dicatat apa adanya?
+            <textarea id="reflectionHonesty" placeholder="Tuliskan refleksi..."></textarea>
+          </label>
+
+          <label>
+            Apa yang akan kamu perbaiki pada desain bangunanmu?
+            <textarea id="reflectionImprove" placeholder="Tuliskan ide perbaikan..."></textarea>
+          </label>
+
+          <fieldset>
+            <legend>Post-test 1. Amplitudo besar pada grafik menunjukkan...</legend>
+            <label><input type="radio" name="p1" value="1" /> guncangan lebih besar</label>
+            <label><input type="radio" name="p1" value="0" /> tidak ada getaran</label>
+            <label><input type="radio" name="p1" value="0" /> data pasti salah</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Post-test 2. Penguat diagonal pada struktur dapat...</legend>
+            <label><input type="radio" name="p2" value="1" /> membantu meningkatkan kekakuan/stabilitas</label>
+            <label><input type="radio" name="p2" value="0" /> selalu membuat bangunan lebih lemah</label>
+            <label><input type="radio" name="p2" value="0" /> menghilangkan semua getaran</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Post-test 3. Jika hasil eksperimen tidak sesuai prediksi, maka siswa perlu...</legend>
+            <label><input type="radio" name="p3" value="1" /> menganalisis data dan kemungkinan kesalahan pengukuran</label>
+            <label><input type="radio" name="p3" value="0" /> mengganti angka seenaknya</label>
+            <label><input type="radio" name="p3" value="0" /> menyembunyikan hasilnya</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Post-test 4. Belajar getaran penting karena...</legend>
+            <label><input type="radio" name="p4" value="1" /> berkaitan dengan fenomena nyata seperti gempa dan stabilitas struktur</label>
+            <label><input type="radio" name="p4" value="0" /> hanya untuk menghafal rumus</label>
+            <label><input type="radio" name="p4" value="0" /> tidak berhubungan dengan kehidupan</label>
+          </fieldset>
+
+          <div class="final-actions">
+            <button class="primary" type="submit">Simpan Refleksi & Nilai Akhir</button>
+            <button class="secondary" type="button" id="exportCsvBtn">Export CSV</button>
+            <button class="secondary" type="button" id="printReportBtn">Cetak Laporan</button>
+            <button class="danger" type="button" id="clearDataBtn">Reset Semua</button>
+          </div>
+        </form>
+
+        <div class="report-card" id="reportCard">
+          <h3>Ringkasan Hasil</h3>
+          <div id="summaryText">Belum ada ringkasan. Selesaikan aktivitas terlebih dahulu.</div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
